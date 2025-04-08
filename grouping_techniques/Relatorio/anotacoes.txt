@@ -1,0 +1,64 @@
+IRIS: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html
+WINE: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html
+
+hierarquico
+https://www.youtube.com/watch?v=zXtMvcgl594
+
+Iris Dataset: Contém medições de 150 flores de três espécies (Setosa, Versicolor e Virginica), com quatro atributos (comprimento e largura da sépala e da pétala).
+
+Wine Dataset: Possui 178 amostras de três tipos diferentes de vinho, com 13 atributos químicos.
+
+
+DIMENSÕES DO GRAFICO (PARTICIONAL):
+    WINE:
+        -Alcohol: Coordenada Y GRAFICO
+        -malic acid: coordenada X GRAFICO
+        -ash: tamanho do ponto (menos-> menos ash, mais-> mais ash)
+ 
+
+    IRIS:
+        -SPECIES: formas geometricas (triangulo, bola, quadrado)
+        -petalLEnght: coordenada Y
+        -petalWidth: Coordenada X 
+
+        
+
+
+ATRIBUTOS ESCOLHIDOS WINE:
+    -Alcohol
+    -malic acid
+    -ash
+
+ATRIBUTOS ESCOLHIDOS IRIS:
+    -species
+    -PetalLengh
+    -PetalWidth
+
+
+
+
+Algoritmo Particional - K-Means e Bi-Secting K-Means
+
+O K-Means é um algoritmo que tenta dividir os dados em kk grupos, minimizando a soma das distâncias dos pontos ao centróide de seu grupo. O Bi-Secting K-Means é uma variação que divide os clusters de forma hierárquica.
+
+    Definir um intervalo de valores para kk.
+
+    Utilizar o método do cotovelo (Elbow Method) para encontrar o número ideal de clusters.
+
+    Executar o K-Means e Bi-Secting K-Means com o kk escolhido.
+
+    Comparar os resultados visualmente e com métricas como Silhouette Score.
+
+
+
+Algoritmo Hierárquico - Linkage
+
+Os métodos de agrupamento hierárquico funcionam criando uma estrutura em árvore (dendrograma). No método Linkage, os grupos são formados iterativamente unindo os pontos mais próximos.
+
+    Escolher um critério de ligação: single, complete ou average linkage.
+
+    Criar um dendrograma para entender a formação dos clusters.
+
+    Definir um ponto de corte no dendrograma para escolher kk.
+
+    Comparar os resultados com os métodos particionais.
